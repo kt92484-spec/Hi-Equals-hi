@@ -10,8 +10,7 @@ bool custom_case_insensitive_equal(const string& s1, const string& s2) {
     if (s1.length() != s2.length()) {
         return false;
     }
-
-\
+    
     return equal(s1.begin(), s1.end(), s2.begin(), s2.end(),
         [](unsigned char charA, unsigned char charB) {
             return tolower(charA) == tolower(charB);
